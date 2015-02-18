@@ -20,7 +20,7 @@ h1{
 }
 
 h2{
-	font-size: 17pt;
+	font-size: 16pt;
 	text-align: center;
 }
 
@@ -32,7 +32,7 @@ h3{
 }
 
 h4{
-	font-size: 12pt;
+	font-size: 11pt;
 	text-align: left;
 	border: #66b6fc 2px solid;
 	
@@ -49,7 +49,7 @@ h4{
 }
 
 h5{
-	font-size: 11pt;
+	font-size: 10pt;
 }
 
 code{
