@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Coming Soon</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="image_src" href="thumb.jpg">
+	
+	<title>x265 GUI Encoder with Internet Friendly Media Encoder!</title>
+	
+	<!-- Some javascript for some stuff -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	
+	<!-- Direct link to iframe-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var data=location.search;
+		if(data) {
+			data=location.search.substring(1); // remove the '?'
+			frames[0].location = data;
+		}
+	});
+	</script>
+
+	<!-- SEO -->
+	<meta name="title" content="HEVC/H.265 Encoder with IFME" />
+	<meta name="description" content="Shrink video up to half the original size while maintaining highest possible quality compared previous generation.">
+	<meta name="keywords" content="x265, HEVC, H265, H.254, IFME, Internet Friendly Media Encoder, H.264, x264, OpenCL">
+
+	<!-- Extra -->
+	<meta name="browser" content="Mozilla Firefox 22">
+	<meta name="copyright" content="Copyright &copy; 2008~2013 MY Anime Clan, All rights reserved.">
+	<meta name="editor" content="Microsoft Expression Web 4">
+	<meta name="author" content="Anime4000">
+	<meta name="robots" content="index,follow">
+	
+	<!-- No Cache at All -->
+	<meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="Wed, 11 Jan 1984 05:00:00 GMT"/>
 </head>
 <body>
-	<h1>Building webpage!</h1>
+	<div class="content" >
+		<div class="top_block banner" >
+			<div id="banner_left" ></div><div id="banner_right" ></div>
+		</div>
+		<div class="background menu" id="menu_colour">
+			<div id="menu_content" >
+				<div class="menu_size"><a class="menu_size menu_link" href="?page/intro.html" >Introduction<br>はじめに</a></div>
+				<div class="menu_size"><a class="menu_size menu_link" href="?page/download.html" >Download<br>ダウロード</a></div>
+				<div class="menu_size"><a class="menu_size menu_link" href="?page/addons.html" >Addons<br>アドオン</a></div>
+                <div class="menu_size"><a class="menu_size menu_link" href="?page/doc.html" >Documentation<br>ドキュメンテーション</a></div>
+				<div class="menu_size"><a class="menu_size menu_link" href="?page/contrib.html" >Contributors<br>貢献者</a></div>
+				<div class="menu_size"><a class="menu_size menu_link" href="?page/rights.html" >License<br>ライセンス</a></div>
+			</div>
+			<div id="donate_content" >
+				<p></p>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="4CKYN7X3DGA7U">
+					<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+				<a>Monthly Goal/Fees: $50<br />
+				Donations: $0<br />
+				Amount Needed: $0<br />
+				<a href="?page/contrib.html"><b><big>Hall of Fame</big></b></a>
+				</a>
+			</div>
+		</div>
+		
+		<div class="background xframe" >
+			<iframe id="TheFrame" src="page/intro.html" name="gg" ></iframe>
+		</div>
+		<div class="bottom_block footer">
+			Designed by <a href="http://gplus.to/Anime4000/">Anime4000</a> for Internet Friendly Media Encoder, Hosted by <a href="http://sourceforge.net/">SourceForge</a><br>Page content licensed under the <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Common Attribution-ShareAlike 4.0 International</a>
+		</div>
+	</div>
 </body>
 </html>

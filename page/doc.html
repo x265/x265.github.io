@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html manifest="../cache.mf">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>How to use IFME</title>
+	
+	<script type="text/javascript">
+	if (top == self) {
+		location.href = '../index.html?' + 'page/doc.html';
+	}
+	</script>
+
+	<!-- SEO -->
+	<meta name="title" content="User manual" />
+	<meta name="description" content="How to use and FAQ">
+	<meta name="keywords" content="Help, x265, HEVC, H265, H.254, IFME, Internet Friendly Media Encoder, H.264, x264, OpenCL">
+</head>
+<body>
+	<h1>Documentation</h1>
+	<p>Everything you need!</p>
+	<h3><a>Introduction</a></h3>
+	<p>Japanese version can be found here <a href="https://nedb.co/the-ifme-project/">https://nedb.co/the-ifme-project/</a> (by Nemu)</p>
+	<h4>Navigate</h4>
+	<ul>
+		<li><a href="doc.html#how">How to use (basic)</a></li>
+		<li><a href="doc.html#addons">Create own addon</a></li>
+		<li><a href="doc.html#faq">FAQ</a></li>
+	</ul>
+	<h3 id="how"><a>Basics</a></h3>
+    <h5><a>How to use</a></h5>
+	<p>English version edited by Jan Bicker</p>
+    <a>IFME was designed to be "simple to use". The GUI looks similar to tools like HandBrake, x264vfw, MeGUI etc. The basics are explained below.</a>
+	<div><img src="../images/help/UI-01.png"></img></div>
+	<a>Video and Audio configuration is pretty straight forward and self-explanatory.</a>
+	<div><img src="../images/help/UI-02.png"></img></div>
+	<div><img src="../images/help/UI-03.png"></img></div>
+	<a>Currently, only one subtitle track per video is supported.<br><a>
+    <div><img src="../images/help/UI-04.png"></img></div>
+	<a>Add your own custom font as an attachment.</a>
+	<div><img src="../images/help/UI-05.png"></img></div>
+	<h3 id="addons">Add-ons</h3>
+	<h5><a>Make your own add-ons</a></h5>
+	<a>Currently, IFME only supports add-ons for the audio encoder. Follow this guide line to create a simple one.	</a>
+	<ul>
+		<li><a>First, go to your installation folder (i. e.: 'C:\\Programs\Internet Friendly Media Encoder\addons') and create a subfolder, for example "mp3".<br><div><img src="../images/addon/addon_new.png"></img></div></a></li>
+		<br>
+		<li><a>Download this <a href="../stuff/addon.ini">sample INI</a> file and save it to your "mp3" folder.<br><div><img src="../images/addon/addon_new1.png"></img></div></a></li>
+		<br>
+		<li><a>Download a command-line encoder, for now we are going to use LAME (remember, we need a binary).<br><div><img src="../images/addon/addon_lame.png"></img></div></a></li>
+		<br>
+		<li><a>Extract everything to your MP3 add-on folder (i.e. '.\addons\mp3\').</a></li>
+		<li><a>Hold Shift and right-click somewhere in the free space of the folder. Proceed to choose 'Open command window here'.</a></li>
+		<li><a>Type "lame.exe --help" without quotation marks. This will display available basic commands.<br><div><img src="../images/addon/addon_cmd.png"></img></div></a></li>
+		<br>
+		<li><a>For example, LAME require: lame.exe -b 128 "in_file.wav" "out_file.mp3"</a></li>
+		<li><a>Open "addon.ini" file with your favourite Notepad and Edit:<br><div><img src="../images/addon/addon.png"></img></div></a></li>
+		<br>
+		<li><a>Fill all, (you need a web server that can host, try dropbox web hosting (http://my.droppages.com/)<br>☒ type = audio (obviously)<br>☒ Profile, pretty basic info for encoder, that container showing that which container support, MP4 or MKV (type in lower case)<br>☒ Provider, name = enter your name.<br>☒ update = a HTTP url path that contain <a href="http://ifme.sourceforge.net/update/addons/ogg.txt">latest version</a>, a txt file only contain version, refer to [profile]<br>☒ download = a HTTP url path that IFME will download if txt contain latest version.<br>☒ Data, app = a exe file name,<br>☒ cmd = a basic command, place holder: "{0}" holds LAME MP3 bitrate, "|{1}.mp3|" output file, "|{2}|" input file, "{3}" extra command that refer from "adv" below.<br>☒ quality = enter a valid bitrate value<br>☒ default = choose the best bitrate value</a></li>
+		<br>
+		<li><a>Once done, save it. Go back addons folder and start "zip" your mp3 addon (no rar or 7z)<br><div><img src="../images/addon/addon_zip.png"></img></div></a></li>
+		<br>
+		<li><a>You may rename the file and extension to "mp3byme.ifz" (.ifz is extension that FIME understand)</a></li>
+		<br>
+		<li><a>Publish it... You can submit to <a href="https://www.facebook.com/internetfriendlymediaencoder">Facebook page</a> to get listed at our website... and yet submission need to be approved before become official. (check if this addon is working or not)</a></li>
+	</ul>
+	<br>
+	<br>
+	<h3 id="faq">Help</h3>
+	<h5><a>FAQ</a></h5>
+	<ul> <!-- <li><a></a></li> <a href=""></a> -->
+        <li><a>Why is there no option to change video resolution?<br>IFME was designed to keep the video as close to the original as possible. If you want to resize your video, use AviSynth. <b>Increasing resolution (also knows as 'up-scaling') will result in poor video quality.</b></a></li>
+		<br>
+		<li><a>The latest IFME release doesn't have an option to change video bit depth. Why is that?<br>While 10bit to 8bit conversion seems acceptable, the resulting file will be larger than the original. Converting 8bit to 10bit will not result in better video quality. If you insist on converting your video in terms of video bit depth, use x264 instead.</a></li>
+		<br>
+		<li><a>Why is there no option to change video FPS?<br>Increasing or decreasing FPS will result in choppy playback. Always use original/source FPS.</a></li>
+		<br>
+		<li><a>Can I encode my game recording?<br>Yes, you can. So far the video decoder only accepts input from FRAPS, using AMD Gaming Evolved or nVidia Shadow Play to capture your gaming may cause errors.</a></li>
+		<br>
+		<li><a>Why can't I upload my videos to YouTube or Facebook?<br>H.265/HEVC is still a new codec and development is an ongoing process, YouTube or Facebook are still using H.264/AVC for encoding user uploads. This might change in the future, however and H.265/HEVC might be supported.</a></li>
+		<br>
+		<li><a>Why is there a 'one subtitle per video' restriction?<br>It keeps things simple to use, if you want to add more subtitle tracks, use MKVToolnix.</a></li>
+		<br>
+		<li><a>Why doesn't MP4 accept subtitles?<br>MP4 container is very limited, basically it only supports SRT subtitles. Use MKV instead, it is much more versatile.</a></li>
+		<br>
+		<li><a>Why does encoding take so long?<br>Much like x264, HEVC needs a lot more resources than XviD or MPEG-2. CPU power is crucial for encoding purposes. For best results, make sure you have at least a dual-core CPU, quad-core or higher will reduce encoding time significantly.</a></li>
+	</ul>
+	<br>
+	<br>
+</body>
+</html>
