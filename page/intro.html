@@ -11,6 +11,11 @@
 	}
 	</script>
 
+	<!-- 3D Rotate -->
+	<script>
+	var looper; var degrees = 0; function rotateAnimation(el,speed){ var elem = document.getElementById(el); if(navigator.userAgent.match("Chrome")){ elem.style.WebkitTransform = "perspective(1262px) rotateY("+degrees+"deg)"; } else if(navigator.userAgent.match("Firefox")){ elem.style.MozTransform = "perspective(1262px) rotateY("+degrees+"deg)"; } else if(navigator.userAgent.match("MSIE")){ elem.style.msTransform = "perspective(1262px) rotateY("+degrees+"deg)"; } else if(navigator.userAgent.match("Opera")){ elem.style.OTransform = "perspective(1262px) rotateY("+degrees+"deg)"; } else { elem.style.transform = "perspective(1262px) rotateY("+degrees+"deg)"; } looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed); degrees++; if(degrees > 340){ degrees = 340; } document.getElementById("status").innerHTML = "perspective(1262px) rotateY("+degrees+"deg)"; }
+	</script>
+
 	<!-- SEO -->
 	<meta name="title" content="HEVC/H.265 Encoder with IFME" />
 	<meta name="description" content="Shrink video up to half the original size while maintaining highest possible quality compared previous generation.">
@@ -22,7 +27,7 @@
 	<meta http-equiv="Expires" content="Wed, 11 Jan 1984 05:00:00 GMT"/>	
 </head>
 <body>
-	<div class="img_center"><a href="download.html"><img src="../images/ifme-by-ray-en.png" alt="lol" height="256" width="512"></a></div>
+	<div class="img_center"><a href="download.html"><div id="threed"></div></a></div>
 	<h1>The IFME Project</h1>
 	<h2>Fast and Easy x265 GUI Multimedia Encoder</h2>
 	<p>Donate to IFME project, <a href="https://github.com/Anime4000/IFME#donation">click here</a> how to.</p>
@@ -95,5 +100,8 @@
 	</ul>
 	<p><strong>23/Dec/2013:</strong><br>IFME v3 will release soon, around in Monday or Tuesday, touch some code and little housekeeping :) and improved updater program~ also need write the changelog, keep track what I change and update. I really hope this one useful encoder in the future!</p>
 	<p><strong>09/Dec/2013:</strong><br>Ok! Now I working on version 3.0, maybe too early for that, but come with many feature's, however, currently I working, having a job on HP, as Computer Deployment (Desktop Management Project), I may not have much time to working on it, I'll keep trying to make as soon as possible, :) I promise... Coming soon, IFME 3.0! (I forgot to make change log...)</p>
+	
+	<!-- Three D-->
+	<script>rotateAnimation("threed",5);</script>
 </body>
 </html>
