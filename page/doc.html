@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="../cache.mf">
+<html>
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<link rel="stylesheet" href="style.css" type="text/css">
@@ -15,6 +15,11 @@
 	<meta name="title" content="User manual" />
 	<meta name="description" content="How to use and FAQ">
 	<meta name="keywords" content="Help, x265, HEVC, H265, H.254, IFME, Internet Friendly Media Encoder, H.264, x264, OpenCL">
+
+	<!-- No Cache at All -->
+	<meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="Wed, 11 Jan 1984 05:00:00 GMT"/>	
 </head>
 <body>
 	<h1>Documentation</h1>
@@ -28,7 +33,7 @@
 		<li><a href="doc.html#faq">FAQ</a></li>
 	</ul>
 	<h3 id="how"><a>Basics</a></h3>
-    <h5><a>How to use</a></h5>
+    <h4><a>How to use</a></h4>
 	<p>English version edited by Jan Bicker</p>
     <a>IFME was designed to be "simple to use". The GUI looks similar to tools like HandBrake, x264vfw, MeGUI etc. The basics are explained below.</a>
 	<div><img src="../images/help/UI-01.png"></img></div>
@@ -40,7 +45,7 @@
 	<a>Add your own custom font as an attachment.</a>
 	<div><img src="../images/help/UI-05.png"></img></div>
 	<h3 id="addons">Add-ons</h3>
-	<h5><a>Make your own add-ons</a></h5>
+	<h4><a>Make your own add-ons</a></h4>
 	<a>Currently, IFME only supports add-ons for the audio encoder. Follow this guide line to create a simple one.	</a>
 	<ul>
 		<li><a>First, go to your installation folder (i. e.: 'C:\\Programs\Internet Friendly Media Encoder\addons') and create a subfolder, for example "mp3".<br><div><img src="../images/addon/addon_new.png"></img></div></a></li>
@@ -67,7 +72,7 @@
 	<br>
 	<br>
 	<h3 id="faq">Help</h3>
-	<h5><a>FAQ</a></h5>
+	<h4><a>FAQ</a></h4>
 	<ul> <!-- <li><a></a></li> <a href=""></a> -->
         <li><a>Why is there no option to change video resolution?<br>IFME was designed to keep the video as close to the original as possible. If you want to resize your video, use AviSynth. <b>Increasing resolution (also knows as 'up-scaling') will result in poor video quality.</b></a></li>
 		<br>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="../cache.mf">
+<html>
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<link rel="stylesheet" href="style.css" type="text/css">
@@ -15,18 +15,23 @@
 	<meta name="title" content="Download x265 GUI" />
 	<meta name="description" content="Shrink video up to half the original size while maintaining highest possible quality compared previous generation.">
 	<meta name="keywords" content="Download, x265, HEVC, H265, H.254, IFME, Internet Friendly Media Encoder, H.264, x264, OpenCL">
+
+	<!-- No Cache at All -->
+	<meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="Wed, 11 Jan 1984 05:00:00 GMT"/>	
 </head>
 <body>
 	<h1>Software Download</h1>
 	<h3><a id="down">Current version</a></h3>
 	<h4>Current version 4.8 [<a href="https://raw.githubusercontent.com/Anime4000/IFME/master/changelog.txt">Change Log</a>]</h4>
-	<h5><a id="x265w">Windows 64bit (XP, Vista, 7, 8, 8.1, 10 Tech Preview)</a></h5>
+	<h4><a id="x265w">Windows 64bit (XP, Vista, 7, 8, 8.1, 10 Tech Preview)</a></h4>
 	<p><b>Requirement to run:</b> .NET Framework 4.0</p>
 	<ul>
 		<li><a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.8.0.0/x265ui-x64_setup.exe/download" target="_blank">Installer (.exe)</a> (64bit) [MD5: 535C17606CD6855779407FFCF5EF2C27]</li>
         <li><a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.8.0.0/x265ui-x64_win.7z/download" target="_blank">Portable (.7z)</a> (64bit) [MD5: 2DF7ADAB3B644CCA20DCDEAB2B9BB46F]</li>
 	</ul>
-	<h5><a id="x265l">Linux 64bit (Ubuntu 14.04, Linux Mint 17, Kali Linux 1.0.8 or Any latest distribution)</a></h5>	
+	<h4><a id="x265l">Linux 64bit (Ubuntu 14.04, Linux Mint 17, Kali Linux 1.0.8 or Any latest distribution)</a></h4>	
 	<p><b>Ubuntu PPA</b><br/>If your OS was Ubuntu 14.04 and above, use <a href="http://www.upubuntu.com/2015/01/how-to-convert-videos-from-and-to-h265.html">upbuntu</a> PPA, simply copy this command and paste into terminal</p>
 	<code>sudo add-apt-repository -y ppa:upubuntu-com/multimedia && sudo apt-get update && sudo apt-get install ifme</code>
 	<p>Thanks to upbuntu for providing PPA package!<br/>If this PPA have older version, don't worry, proceed to update IFME by clicking "update" button (maybe need sudo first to avoid error), it works anywhere!</p>
@@ -35,7 +40,7 @@
 	<ul>
 		<li><a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.7.4.0/x265ui-x64_linux.tar.gz/download" target="_blank">Archive (.tar.gz)</a> (64bit) [MD5: 66574376824249B162603F53B0CA226E]</li></li>
 	</ul>
-	<h5><a id="prev">Previous version</a></h5>
+	<h4><a id="prev">Previous version</a></h4>
     <ul>
         <li><a href="https://sourceforge.net/projects/ifme/files/encoder-gui/" target="_blank">Browse all version</a></li>
 		<li>Version: 4.7.4.0 beta - <a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.7.4.0/" target="_blank">Installer/7z Archive (64bit)</a></li>
@@ -74,9 +79,9 @@
 	<br>
 	<h3>Source code</h3>
 	<p>Open Source is one best solution where everyone can see and contribute! Make sure the application is free from malicious code that harm your computer!</p>
-	<h5 id="scx265">x265</h5>
+	<h4 id="scx265">x265</h4>
 	<p>HEVC/H.265 Source code available here: <a href="https://bitbucket.org/multicoreware/x265/wiki/Home" target="_blank">https://bitbucket.org/multicoreware/x265/wiki/Home</a></p>
-	<h5 id="scifme">IFME</h5>
+	<h4 id="scifme">IFME</h4>
 	<p>IFME Source Code can be found at <a href="https://github.com/Anime4000/IFME">GitHub Project</a>. Let's contribute to Open Source development!</p>
 	<br>
 	<br>
