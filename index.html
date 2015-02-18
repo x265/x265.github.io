@@ -22,7 +22,12 @@
 		}
 	});
 	</script>
-
+	
+	<!-- Also HTTPS -->
+	<script>
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+	</script>
 	<!-- SEO -->
 	<meta name="title" content="HEVC/H.265 Encoder with IFME" />
 	<meta name="description" content="Shrink video up to half the original size while maintaining highest possible quality compared previous generation.">
