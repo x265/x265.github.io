@@ -1,0 +1,165 @@
+Internet Friendly Media Encoder - by Anime4000 (http://ifme.sf.net/)
+Version: 4.9.1.0 compiled on 22/Feb/2015 (AMD64/Windows DEBUG)
+
+Warning: This program still in beta, unexpected behaviour may occur.
+Save this log? Click here and press CTRL+S (console will be clear after save)
+
+[ ok ] Previous settings has been upgraded!
+[info] Checking for updates
+[info] This version intend for private testing, public version are 4.9.0.0
+[ ok ] 17 Installed language detected!
+[ ok ] 11 Addons has been loaded!
+[info] Current MUI: English by Anime4000 (https://github.com/Anime4000)
+[info] File "azu nyan" added via Drag n Drop
+             Format: AVC (.mp4). RES: 512x384p. FPS: [CFR] 30 (3139 frames). BPP: 8 bits
+[info] 2/22/2015 10:27:15 PM: Encoding started...
+[info] Processing azu nyan.mp4
+[info] Now decoding audio~ Please Wait...
+ffmpeg version N-65529-gd6711ee Copyright (c) 2000-2014 the FFmpeg developers
+  built on Aug 11 2014 23:19:34 with gcc 4.8.3 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-decklink --enable-zlib
+  libavutil      54.  1.100 / 54.  1.100
+  libavcodec     56.  0.100 / 56.  0.100
+  libavformat    56.  0.100 / 56.  0.100
+  libavdevice    56.  0.100 / 56.  0.100
+  libavfilter     5.  0.100 /  5.  0.100
+  libswscale      3.  0.100 /  3.  0.100
+  libswresample   1.  0.100 /  1.  0.100
+  libpostproc    53.  0.100 / 53.  0.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'D:\Users\Anime4000\Downloads\Video\azu nyan.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isom
+    creation_time   : 2009-06-12 15:18:06
+    copyright       : 
+    copyright-eng   : 
+  Duration: 00:01:44.66, start: 0.000000, bitrate: 604 kb/s
+    Stream #0:0(jpn): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg), 512x384, 472 kb/s, 30 fps, 30 tbr, 10000k tbn, 60 tbc (default)
+    Metadata:
+      creation_time   : 2009-06-12 15:07:29
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(jpn): Audio: aac (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2009-06-12 15:18:06
+      handler_name    : GPAC ISO Audio Handler
+Output #0, matroska, to 'C:\Users\Anime4000\AppData\Local\Temp\ifme\audio1.mka':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isom
+    copyright-eng   : 
+    copyright       : 
+    encoder         : Lavf56.0.100
+    Stream #0:0(jpn): Audio: aac ([255][0][0][0] / 0x00FF), 48000 Hz, stereo, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2009-06-12 15:18:06
+      handler_name    : GPAC ISO Audio Handler
+Stream mapping:
+  Stream #0:1 -> #0:0 (copy)
+Press [q] to stop, [?] for help
+size=    1676kB time=00:01:44.66 bitrate= 131.2kbits/s    
+video:0kB audio:1641kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.111536%
+[info] Encoding azu nyan.mp4
+[info] Processing images, pass 1 of 4
+y4m  [info]: 512x384 fps 10000000/333333 i420p8 unknown frame count
+x265 [info]: HEVC encoder version 1.5+9-7a42ca02d198
+x265 [info]: build info [Windows][GCC 4.9.1][64 bit] 8bpp
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT
+x265 [info]: Main profile, Level-2.1 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 12 / 2 / 6
+x265 [info]: Coding QT: max CU size, min CU size : 32 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : dia / 25 / 0 / 1
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Lookahead / bframes / badapt        : 10 / 4 / 0
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 0 / 0 / 1
+x265 [info]: Rate Control / AQ-Strength / CUTree : ABR-2048 kbps / 0.0 / 0
+x265 [info]: tools: rd=2 psy-rd=0.30 early-skip deblock fast-intra tmvp stats-write 
+                                                                                
+encoded 3139 frames in 49.43s (63.50 fps), 1634.05 kb/s
+x265 [info]: frame I:     13, Avg QP:18.13  kb/s: 4349.28 
+x265 [info]: frame P:    616, Avg QP:14.07  kb/s: 2839.16 
+x265 [info]: frame B:   2510, Avg QP:16.43  kb/s: 1324.24 
+x265 [info]: global :   3139, Avg QP:15.97  kb/s: 1634.05 
+x265 [info]: consecutive B-frames: 0.2% 0.0% 0.2% 0.0% 99.7% 
+[info] Processing images, pass 2 of 4
+y4m  [info]: 512x384 fps 10000000/333333 i420p8 unknown frame count
+x265 [info]: HEVC encoder version 1.5+9-7a42ca02d198
+x265 [info]: build info [Windows][GCC 4.9.1][64 bit] 8bpp
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT
+x265 [info]: Main profile, Level-2.1 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 12 / 2 / 6
+x265 [info]: Coding QT: max CU size, min CU size : 32 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : dia / 25 / 0 / 2
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Lookahead / bframes / badapt        : 10 / 4 / 0
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 0 / 0 / 1
+x265 [info]: Rate Control / AQ-Strength / CUTree : ABR-2048 kbps / 0.0 / 0
+x265 [info]: tools: rd=2 psy-rd=0.30 early-skip deblock fast-intra tmvp stats-write stats-read 
+encoded 3139 frames in 51.12s (61.41 fps), 2018.67 kb/s
+                                                                                
+x265 [info]: frame I:     13, Avg QP:11.19  kb/s: 7372.03 
+x265 [info]: frame P:    616, Avg QP:12.36  kb/s: 3229.61 
+x265 [info]: frame B:   2510, Avg QP:14.38  kb/s: 1693.76 
+x265 [info]: global :   3139, Avg QP:13.97  kb/s: 2018.67 
+x265 [info]: consecutive B-frames: 0.2% 0.0% 0.2% 0.0% 99.7% 
+[info] Processing images, pass 3 of 4
+y4m  [info]: 512x384 fps 10000000/333333 i420p8 unknown frame count
+x265 [info]: HEVC encoder version 1.5+9-7a42ca02d198
+x265 [info]: build info [Windows][GCC 4.9.1][64 bit] 8bpp
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT
+x265 [info]: Main profile, Level-2.1 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 12 / 2 / 6
+x265 [info]: Coding QT: max CU size, min CU size : 32 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : dia / 25 / 0 / 2
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Lookahead / bframes / badapt        : 10 / 4 / 0
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 0 / 0 / 1
+x265 [info]: Rate Control / AQ-Strength / CUTree : ABR-2048 kbps / 0.0 / 0
+x265 [info]: tools: rd=2 psy-rd=0.30 early-skip deblock fast-intra tmvp stats-write stats-read 
+encoded 3139 frames in 50.45s (62.22 fps), 2034.33 kb/s
+                                                                                
+x265 [info]: frame I:     13, Avg QP:11.23  kb/s: 7216.68 
+x265 [info]: frame P:    616, Avg QP:12.48  kb/s: 3239.58 
+x265 [info]: frame B:   2510, Avg QP:14.49  kb/s: 1711.70 
+x265 [info]: global :   3139, Avg QP:14.08  kb/s: 2034.33 
+x265 [info]: consecutive B-frames: 0.2% 0.0% 0.2% 0.0% 99.7% 
+[info] Processing images, pass 4 of 4
+y4m  [info]: 512x384 fps 10000000/333333 i420p8 unknown frame count
+x265 [info]: HEVC encoder version 1.5+9-7a42ca02d198
+x265 [info]: build info [Windows][GCC 4.9.1][64 bit] 8bpp
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT
+x265 [info]: Main profile, Level-2.1 (Main tier)
+x265 [info]: WPP streams / frame threads / pool  : 12 / 2 / 6
+x265 [info]: Coding QT: max CU size, min CU size : 32 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : dia / 25 / 0 / 2
+x265 [info]: Keyframe min / max / scenecut       : 25 / 250 / 0
+x265 [info]: Lookahead / bframes / badapt        : 10 / 4 / 0
+x265 [info]: b-pyramid / weightp / weightb / refs: 1 / 0 / 0 / 1
+x265 [info]: Rate Control / AQ-Strength / CUTree : ABR-2048 kbps / 0.0 / 0
+x265 [info]: tools: rd=2 psy-rd=0.30 early-skip deblock fast-intra tmvp stats-read 
+encoded 3139 frames in 50.29s (62.41 fps), 2030.49 kb/s
+                                                                                
+x265 [info]: frame I:     13, Avg QP:11.18  kb/s: 7252.38 
+x265 [info]: frame P:    616, Avg QP:12.43  kb/s: 3251.19 
+x265 [info]: frame B:   2510, Avg QP:14.45  kb/s: 1703.86 
+x265 [info]: global :   3139, Avg QP:14.04  kb/s: 2030.49 
+x265 [info]: consecutive B-frames: 0.2% 0.0% 0.2% 0.0% 99.7% 
+[info] Now merge some stuff and synchronise video and audio~ Almost there!
+mkvmerge v7.1.0 ('Good Love') 64bit built on Jul 27 2014 13:06:55
+'C:\Users\Anime4000\AppData\Local\Temp\ifme\video.hevc': Using the demultiplexer for the format 'HEVC/h.265'.
+'C:\Users\Anime4000\AppData\Local\Temp\ifme\audio1.mka': Using the demultiplexer for the format 'Matroska'.
+'C:\Users\Anime4000\AppData\Local\Temp\ifme\video.hevc' track 0: Using the output module for the format 'HEVC/h.265 (unframed)'.
+'C:\Users\Anime4000\AppData\Local\Temp\ifme\audio1.mka' track 0: Using the output module for the format 'AAC'.
+The file 'D:\Users\Yukipone\Videos\azu nyan.mkv' has been opened for writing.
+Progress: 11%
+Progress: 100%
+Progress: 100%
+The cue entries (the index) are being written...
+Muxing took 0 seconds.
+[info] This session takes 3 min 23 sec
+[ ok ] 2/22/2015 10:30:38 PM: Encoding completed!
