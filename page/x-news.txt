@@ -1,4 +1,5 @@
-In Friday, IFME will release version 4.9.3 which is fix major problem that some user stop at audio extracting, stay tune!
+IFME 4.9.3 is out now!
+If you using older version, please update, it cover critical issue.
 
 Thank you for using IFME! It's help you standardized your collection.
 You can support IFME by donation via Paypal or Bitcoin, simply click button below.
