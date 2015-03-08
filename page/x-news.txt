@@ -1,5 +1,8 @@
 IFME 4.9.3 is out now!
 If you using older version, please update, it cover critical issue.
 
+This month (March) donation:
+1. Jonathan Douglas
+
 Thank you for using IFME! It's help you standardized your collection.
 You can support IFME by donation via Paypal or Bitcoin, simply click button below.
