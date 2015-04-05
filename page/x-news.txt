@@ -1,5 +1,5 @@
-IFME 4.9.3 is out now!
-If you using older version, please update, it cover critical issue.
+If you using older version, please update, however...
+IFME 4.9.5 is coming up with AviSynth support :)
 
 This month (March) donation:
 1. Jonathan Douglas
