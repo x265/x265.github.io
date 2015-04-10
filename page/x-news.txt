@@ -1,8 +1,14 @@
-If you using older version, please update, however...
-IFME 4.9.5 is coming up with AviSynth support :)
-
-This month (March) donation:
-1. Jonathan Douglas
+If you want to use AviSynth support on IFME, you can get from GitHub! 
+Take IFME version 4.9.5+ from here: https://github.com/Anime4000/IFME/releases
 
 Thank you for using IFME! It's help you standardized your collection.
 You can support IFME by donation via Paypal or Bitcoin, simply click button below.
+
+This month donation
+	1. Michael Tracy
+
+Previous month donation:
+	1. Jonathan Douglas
+
+All Time donation:
+	1. Abdullah Al Edris (2014 Nov & Dec)
