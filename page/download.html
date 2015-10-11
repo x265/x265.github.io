@@ -17,33 +17,42 @@
 	<meta name="keywords" content="Download, x265, HEVC, H265, H.254, IFME, Internet Friendly Media Encoder, H.264, x264, OpenCL">
 
 	<!-- No Cache at All -->
-	<meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate"/>
-	<meta http-equiv="Pragma" content="no-cache"/>
-	<meta http-equiv="Expires" content="Wed, 11 Jan 1984 05:00:00 GMT"/>	
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />	
 </head>
 <body>
 	<h1>Software Download</h1>
 	<h3><a id="down">Latest version</a></h3>
-	<h4><a id="x265w">Windows 64bit (Vista, 7, 8, 8.1, 10 Tech Preview)</a></h4>
+	
+	<h4><a id="x265w">Windows 64bit (Vista, 7, 8, 8.1, 10)</a></h4>
 	<p><b>Requirement to run:</b> .NET Framework 4.0</p>
 	<ul>
-		<li><a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.9.4.0/x265ui-x64_setup.exe/download" target="_blank">Installer (.exe)</a> (64bit) [MD5: 1C7590EE58585B49730DE3A57C06384A]</li>
-        <li><a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.9.4.0/x265ui-x64_win.7z/download" target="_blank">Portable (.7z)</a> (64bit) [MD5: 181CF1C4425E03E7442D11C13899B722]</li>
+		<li><a href="http://sourceforge.net/projects/ifme/files/encoder-gui/5.1.0/ifme-5.1.0.0-x86x64_windows.exe/download" target="_blank">Installer + Portable</a> (32bit + 64bit) [MD5: 441761006862A7B22D670D1AF94A9B4F]</li>
 	</ul>
-	<h4><a id="x265l">Linux 64bit (Ubuntu 14.04, Linux Mint 17, Kali Linux 1.0.8 or Any latest distribution)</a></h4>	
-	<p><b>Ubuntu PPA</b><br/>If your OS was Ubuntu 14.04 and above, use <a href="http://www.upubuntu.com/2015/01/how-to-convert-videos-from-and-to-h265.html">upbuntu</a> PPA, simply copy this command and paste into terminal</p>
-	<code>sudo add-apt-repository -y ppa:upubuntu-com/multimedia && sudo apt-get update && sudo apt-get install ifme</code>
-	<p>Thanks to upbuntu for providing PPA package!<br/>If this PPA have older version, don't worry, proceed to update IFME by clicking "update" button (maybe need sudo first to avoid error), it works anywhere!</p>
-	<p><b>Other Linux Desktop</b><br/>If you have other Linux distribution such as Debian, type this command (if you have CentOS such as, try install these package)</p>
-	<p><code>sudo apt-get install mono-complete mediainfo libavformat-dev libswscale-dev libboost-all-dev</code> (also see list of shared binaries <a href="x-linux-shared-bin.txt">here</a>)<br>To run, open <code>ifme.sh</code> or via terminal and type <code>sh ./ifme.sh</code></p>
+	<p>If you did not wish to install, you can do Portable mode by using same installer, simply do</p>
 	<ul>
-		<li><a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.9.4.0/x265ui-x64_linux.tar.gz/download" target="_blank">Archive (.tar.gz)</a> (64bit) [MD5: 5BCBC3CAD83582C607F0C0B2DE1ADA0A]</li></li>
+		<li>For Windows, wish not to install (extract mode) do this step:</li>
+		<li>Change install location</li>
+		<li>Check <b>Don't create a Start Menu folder</b></li>
+		<li>Unchecked <b>create a desktop icon</b></li>
+		<li>Check <b>Portable Mode</b></li>
 	</ul>
+	
+	<h4><a id="x265l">Linux 64bit (Ubuntu 14.04, Linux Mint 17, Kali Linux 1.0.8 or Any latest distribution)</a></h4>	
+	<p><b>Requirement to run:</b> <a href="http://www.mono-project.com/download/#download-lin" target="_blank">Mono Runtime</a>: </code>sudo apt-get install mono-complete</code> package</p>
+	<ul>
+		<li><a href="http://sourceforge.net/projects/ifme/files/encoder-gui/5.1.0/ifme-5.1.0.0-x64_linux.tar.xz/download" target="_blank">Archive (.tar.xz)</a> (64bit only) [MD5: A758BFA17FB151DD8B7CC909F2C05D12]</li>
+	</ul>
+	<p>After extract, simply run <code>./ifme-xterm</code> or <code>./ifme-gnome</code>. To disply Command-line help simply do <code>./ifme -h</code></p>
+	<p>Take note that <a href="http://www.upubuntu.com/2015/01/how-to-convert-videos-from-and-to-h265.html">upubuntu repository</a> contain outdated version of IFME</p>
+	
 	<h3><a id="pre">Pre-release version</a></h3>
 	<p>This is a pre-release version, which is contain unfinished feature and bug, but you can try it <a href="https://github.com/Anime4000/IFME/releases" target="_blank">here</a></p>, normally works on Windows but not Linux, don't worry, final version will works in linux :)</p>
 	<h3><a id="prev">Previous version</a></h3>
     <ul>
-        <li><a href="https://sourceforge.net/projects/ifme/files/encoder-gui/" target="_blank">Browse all version</a></li>
+        <li><a href="https://sourceforge.net/projects/ifme/files/encoder-gui/old" target="_blank">Browse all version</a></li>
+		<li>Version: 4.9.3.0 beta - <a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.9.4.0/" target="_blank">Installer/7z Archive (64bit)</a></li>
 		<li>Version: 4.9.3.0 beta - <a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.9.3.0/" target="_blank">Installer/7z Archive (64bit)</a></li>
 		<li>Version: 4.9.2.0 beta - <a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.9.2.0/" target="_blank">Installer/7z Archive (64bit)</a></li>
 		<li>Version: 4.9.1.0 beta - <a href="http://sourceforge.net/projects/ifme/files/encoder-gui/4.9.1.0/" target="_blank">Installer/7z Archive (64bit)</a></li>

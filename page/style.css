@@ -83,8 +83,8 @@ code{
 }
 
 #threed{
-	width: 499px;
-	height: 379px;
+	width: 480px;
+	height: 480px;
 	display: inline-block;
 	background: url('../images/gui.png') no-repeat;
 	background-size: 100% 100%;
