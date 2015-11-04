@@ -70,9 +70,8 @@ h3{
 	margin: 0 8px 8px 8px;
 }
 
-.gallery img{
+img{
 	width: 100%;
-
 }
 
 /* sticky footer, ref: https://css-tricks.com/snippets/css/sticky-footer/ */
@@ -80,7 +79,7 @@ h3{
 	min-height: 100%;
 	padding-top: 50px; /* add space, default menu size */
 	margin-top: -50px; /* then revert back, leaving for header */
-	margin-bottom: -128px; /* give some space for footer*/
+	margin-bottom: -192px; /* give some space for footer*/
 
 	font-family: 'Open Sans';
 }
@@ -91,7 +90,7 @@ h3{
 }
 
 #footer, .footer, .page-wrap:after {
-	height: 128px;
+	height: 192px;
 }
 
 .header, .footer{
