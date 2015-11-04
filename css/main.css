@@ -11,6 +11,7 @@ html, body {
 
 body {
 	font-family: Nunito, 'Open Sans';
+	overflow-x: none
 }
 
 a:link, a:visited, a:hover, a:active{
