@@ -70,6 +70,10 @@ h3{
 	margin: 0 8px 8px 8px;
 }
 
+/*
+	link, button as image, also gallery,
+	this prevent showing a h-scroll bar in mobile 
+*/
 img{
 	max-width: 100%;
 }
