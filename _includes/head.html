@@ -18,12 +18,14 @@
 	<link rel="stylesheet" href="{{ "/css/icon.css" | prepend: site.baseurl }}">
 
 	<!-- Facebook -->
-	<meta property="og:url"			content="{{ site.url }}{{ page.url }}" />
-	<meta property="og:type"		content="article" />
-	<meta property="og:title"		content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-	<meta property="og:description"	content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-	<meta property="og:image"		content="{{ "/x_fb-cover.jpg" | prepend: site.url }}" />
-	<meta property="fb:app_id"		content="452127734988983" />
+	<meta property="og:url"				content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:type"			content="article" />
+	<meta property="og:title"			content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:description"		content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+	<meta property="og:image"			content="{{ "/image/fb_thm.jpg" | prepend: site.url }}" />
+	<meta property="og:image:width" 	content="600" />
+	<meta property="og:image:height"	content="315" />
+	<meta property="fb:app_id"			content="452127734988983" />
 	
 	<!-- Google Analytics -->
 	<script>
